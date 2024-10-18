@@ -1,0 +1,2 @@
+const e=document.querySelector(".carousel-track"),t=Array.from(e.children),r=document.querySelectorAll(".carousel-nav button"),l=t[0].getBoundingClientRect().width;t.forEach((e,t)=>{e.style.left=`${l*t}px`}),r.forEach((r,l)=>{r.addEventListener("click",()=>{let r=e.querySelector(".current-slide"),c=t[l];e.style.transform=`translateX(-${c.style.left})`,r.classList.remove("current-slide"),c.classList.add("current-slide")})}),t[0].classList.add("current-slide");
+//# sourceMappingURL=index.8e25580e.js.map
